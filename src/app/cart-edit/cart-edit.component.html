@@ -1,0 +1,28 @@
+<app-header></app-header>
+<div class="conatiner-fluid container-fluid-background">
+<div class="row">
+    <div class="col-md-6">
+      
+        <h3>Welcome to IMS</h3>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+          <div class= "form-group" >
+            
+        <label> Title</label>
+        <input class = "form-control" type= "text" formControlName = "title" />
+      </div>
+      <div class="form-group">
+          <label> Description</label>
+          <textarea class = "form-control" type= "text" formControlName = "description"></textarea>
+        </div>
+        <div class="form-group">
+          <label> Image</label>
+          <input class = "form-control" type= "text" formControlName = "image">
+          <img class="img-responsive" src="{{form.value.image}}">
+        </div>
+        <button class="btn btn-success" type="submit" [disabled]="form.invalid"> Save</button> |
+      <button class="btn btn-primary" type="reset">Cancel</button>
+      </form>
+      
+    </div>
+  </div>
+</div>

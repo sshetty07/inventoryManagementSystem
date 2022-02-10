@@ -1,0 +1,9 @@
+
+<app-headeruser></app-headeruser>
+
+<div  style="background-color: #fff; margin: 0; padding: 0%;">
+    <app-cart-user *ngFor="let cart of listOfCart; let i = index"
+    [cart]="cart"
+    [index]="i" ></app-cart-user>
+</div>
+

@@ -1,0 +1,11 @@
+<app-header></app-header>
+    
+    <div  style="background-color: #fff; margin: 0; padding: 0%;">
+        <app-cart *ngFor="let cart of listOfCart; let i = index"
+        [cart]="cart"
+        [index]="i" ></app-cart>
+    </div>
+
+
+
+

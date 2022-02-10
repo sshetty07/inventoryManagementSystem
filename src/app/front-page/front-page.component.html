@@ -1,0 +1,23 @@
+
+<app-headeruser></app-headeruser>
+<div class="container-fluid container-fluid-background"></div>
+<div class="col">
+  <div class="row">
+    <div class="mainPage">
+      <h2>Welcome to IMS</h2>
+  
+  
+      <div class="collapse navbar-collapse" id="myNavbar">
+          <!-- <li class="active"><a routerLink= "/resistration" class="button">Registration</a></li> -->
+          
+      <input type= "text" placeholder="Name" [(ngModel)]= "name" class="mainInput"> 
+      
+      <input type= "password" placeholder="Password" [(ngModel)]= "password1" class="mainInput" >
+      
+      <button (click)="Login()" class="mainButton">Login</button> 
+      <button (click)="Registration()" class="mainButton">Registration</button> 
+  </div>
+  </div>
+
+</div>
+
